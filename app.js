@@ -33,6 +33,11 @@ mongoose
     console.error("Error connecting to the database", error);
   });
 
+app.get("/", (req, res) => {
+  res.send("Welcome to my blog api");
+});
+
+
 //Routes
 app.use("/api", router);
 
